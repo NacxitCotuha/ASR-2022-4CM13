@@ -32,7 +32,7 @@ if __name__ == '__main__':
             a = int(input("Ingrese año (int): "))
             break
         except Exception as e:
-            print("Error al ingresar al fecha, intentelo otra vez")
+            print("Error al ingresar la fecha, intentelo otra vez...")
             continue
     fechaInicial = datetime(a, m, d)
     print(f"Fecha Ingresada en formato (YYYY-MM-DD): {fechaInicial}")
