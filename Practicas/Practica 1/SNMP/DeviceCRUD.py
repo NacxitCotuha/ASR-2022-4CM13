@@ -6,8 +6,8 @@ NAME_BD = "AgentsSNMP.db"
 
 
 VERSION: dict[int, str] = {
-    1: "Ver1",
-    2: "Ver2"
+    1: "Version1",
+    2: "Version2"
 }
 
 
@@ -77,7 +77,7 @@ def actualizar_host_bd(id_dis: int, host: str) -> None:
 def actualizar_ver_bd(id_dis: int, ver: str) -> None:
     conn = conectar_bd()
     cursor_obj = conn.cursor()
-    cursor_obj.execute(f"UPDATE dispositivos SET version = \"{ver}\" WHERE id = {id_dis}")
+    cursor_obj.execute(f"UPDATE agentes SET version = \"{ver}\" WHERE id = {id_dis}")
     conn.commit()
     conn.close()
     return
@@ -86,7 +86,7 @@ def actualizar_ver_bd(id_dis: int, ver: str) -> None:
 def actualizar_comunidad_bd(id_dis: int, comunidad: str) -> None:
     conn = conectar_bd()
     cursor_obj = conn.cursor()
-    cursor_obj.execute(f"UPDATE dispositivos SET comunidad = \"{comunidad}\" WHERE id = {id_dis}")
+    cursor_obj.execute(f"UPDATE agentes SET comunidad = \"{comunidad}\" WHERE id = {id_dis}")
     conn.commit()
     conn.close()
     return
@@ -96,7 +96,7 @@ def eliminar_bd(id_dis: int) -> None:
     try:
         conn = conectar_bd()
         cursor_obj = conn.cursor()
-        cursor_obj.execute(f"DELETE FROM dispositivos WHERE id = {id_dis}")
+        cursor_obj.execute(f"DELETE FROM agentes WHERE id = {id_dis}")
         conn.commit()
         conn.close()
     except sqlite3.DatabaseError:

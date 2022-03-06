@@ -1,7 +1,0 @@
-2) Paquetes multicast que ha recibido una interfaz 
-2) Paquetes recibidos exitosamente, entregados a protocolos IPv4
-2) Mensajes de respuesta ICMP que ha enviado el agente
-2) Segmentos enviados, incluyendo los de las conexiones actuales pero excluyendo los que 
-contienen solamente octetos retransmitidos 
-2) Datagramas recibidos que no pudieron ser entregados por cuestiones distintas a la falta de 
-aplicación en el puerto destino 
