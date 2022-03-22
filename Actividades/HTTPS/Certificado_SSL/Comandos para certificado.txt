@@ -1,0 +1,13 @@
+Ubuntu/Debian:
+comando para hacer una peticion a http
+$ sudo apt install httpie
+
+Generar Certificado SSL para que sea HTTPS
+openssl req -new -x509 -keyout server.pem -out server.pem -days 365 -nodes
+
+
+openssl req -x509 -newkey rsa:2048 -keyout key_certificado.pem -out certificado.pem -days 365 -nodes
+
+http --cert=certificado.pem --cert-key=key_certificado.pem --cert-key-pass=admin123 https://localhost:4444
+
+http http://127.0.0.1:8000http --cert=client.pem --cert-key=client.key --cert-key-pass=my_password https://example.org
