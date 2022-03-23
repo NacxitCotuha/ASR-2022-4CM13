@@ -2,14 +2,16 @@
 import sys
 import os
 import time
+import FuncionesRRD
 
 
 def main() -> None:
     print("Practica 2".center(100, "="))
     try:
-        if ( len(sys.argv) == 2 ):
-            ip: str = sys.argv[0]
+        if ( len(sys.argv) == 3 ):
+            host_ip: str = sys.argv[0]
             puerto: int = int(sys.argv[1])
+            comunidad: str = sys.argv[2]
             menu(host_ip=ip, puerto=puerto)
             sys.exit(0)
         else:
@@ -19,7 +21,7 @@ def main() -> None:
 
 
 def menu( host_ip: str, puerto: int ) -> None:
-    while True:
+    while verificarConexion():
         print("1. Imprimir Reporte Radius")
         print("2. Crear Reporte txt - Radius")
         print("0.- Salir")
@@ -36,8 +38,12 @@ def menu( host_ip: str, puerto: int ) -> None:
             print("Opcion no valida")
 
 
-def verificarConexion() -> bool:
-    time.sleep(5)
+def verificarConexion( host_ip: str, puerto: int ) -> bool:
+    contador: int = 0
+    while contador < 5:
+        estado = FuncionesRRD.consultaSNMP(comunidad=)
+        time.sleep(5)
+    clearConsole()
 
 
 def clearConsole() -> None:
