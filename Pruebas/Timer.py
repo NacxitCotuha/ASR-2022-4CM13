@@ -1,5 +1,6 @@
 import threading
 import time
+import os
 
 def retrasado():
     nom_hilo = threading.current_thread().getName()
@@ -24,3 +25,9 @@ time.sleep(0.3)
 print('hilo2 va a ser cancelado')
 hilo2.cancel()
 print('hilo2 fue cancelado antes de iniciar su ejecución')
+
+
+def curlLoop(host: str):
+    while True:
+        os.system(f"curl {host}") # host, pasar el parametro localhost:3000 como cadena
+        time.sleep(5)

@@ -4,7 +4,7 @@
 <rrd>
 	<version>0003</version>
 	<step>60</step> <!-- Seconds -->
-	<lastupdate>1645642993</lastupdate> <!-- 2022-02-23 13:03:13 CST -->
+	<lastupdate>1648530440</lastupdate> <!-- 2022-03-28 23:07:20 CST -->
 
 	<ds>
 		<name> inoctets </name>
@@ -14,8 +14,8 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>841881</last_ds>
-		<value>0.0000000000e+00</value>
+		<last_ds>2488206</last_ds>
+		<value>2.1447435629e+02</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
 
@@ -27,7 +27,7 @@
 		<max>NaN</max>
 
 		<!-- PDP Status -->
-		<last_ds>240201</last_ds>
+		<last_ds>483991</last_ds>
 		<value>0.0000000000e+00</value>
 		<unknown_sec> 0 </unknown_sec>
 	</ds>
@@ -42,24 +42,24 @@
 		</params>
 		<cdp_prep>
 			<ds>
-			<primary_value>0.0000000000e+00</primary_value>
-			<secondary_value>0.0000000000e+00</secondary_value>
-			<value>2.4166666667e+02</value>
-			<unknown_datapoints>2</unknown_datapoints>
+			<primary_value>2.1100000000e+01</primary_value>
+			<secondary_value>4.2312207195e+00</secondary_value>
+			<value>3.8625427395e+01</value>
+			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
 			<primary_value>0.0000000000e+00</primary_value>
 			<secondary_value>0.0000000000e+00</secondary_value>
-			<value>9.6214285714e+01</value>
-			<unknown_datapoints>2</unknown_datapoints>
+			<value>0.0000000000e+00</value>
+			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 		</cdp_prep>
 		<database>
-			<!-- 2022-02-23 12:36:00 CST / 1645641360 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:42:00 CST / 1645641720 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:48:00 CST / 1645642080 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:54:00 CST / 1645642440 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 13:00:00 CST / 1645642800 --> <row><v>NaN</v><v>NaN</v></row>
+			<!-- 2022-03-28 22:42:00 CST / 1648528920 --> <row><v>2.1100000000e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:48:00 CST / 1648529280 --> <row><v>4.2666666667e+01</v><v>1.0572222222e+01</v></row>
+			<!-- 2022-03-28 22:54:00 CST / 1648529640 --> <row><v>2.2166666667e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:00:00 CST / 1648530000 --> <row><v>2.6155555556e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:06:00 CST / 1648530360 --> <row><v>2.1100000000e+01</v><v>0.0000000000e+00</v></row>
 		</database>
 	</rra>
 	<rra>
@@ -71,39 +71,39 @@
 		</params>
 		<cdp_prep>
 			<ds>
-			<primary_value>2.4166666667e+02</primary_value>
-			<secondary_value>0.0000000000e+00</secondary_value>
+			<primary_value>3.8625427395e+01</primary_value>
+			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 			<ds>
-			<primary_value>9.6214285714e+01</primary_value>
-			<secondary_value>0.0000000000e+00</secondary_value>
+			<primary_value>0.0000000000e+00</primary_value>
+			<secondary_value>NaN</secondary_value>
 			<value>NaN</value>
 			<unknown_datapoints>0</unknown_datapoints>
 			</ds>
 		</cdp_prep>
 		<database>
-			<!-- 2022-02-23 12:44:00 CST / 1645641840 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:45:00 CST / 1645641900 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:46:00 CST / 1645641960 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:47:00 CST / 1645642020 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:48:00 CST / 1645642080 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:49:00 CST / 1645642140 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:50:00 CST / 1645642200 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:51:00 CST / 1645642260 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:52:00 CST / 1645642320 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:53:00 CST / 1645642380 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:54:00 CST / 1645642440 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:55:00 CST / 1645642500 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:56:00 CST / 1645642560 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:57:00 CST / 1645642620 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:58:00 CST / 1645642680 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 12:59:00 CST / 1645642740 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 13:00:00 CST / 1645642800 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 13:01:00 CST / 1645642860 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 13:02:00 CST / 1645642920 --> <row><v>NaN</v><v>NaN</v></row>
-			<!-- 2022-02-23 13:03:00 CST / 1645642980 --> <row><v>2.4166666667e+02</v><v>9.6214285714e+01</v></row>
+			<!-- 2022-03-28 22:48:00 CST / 1648529280 --> <row><v>7.2000000000e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:49:00 CST / 1648529340 --> <row><v>4.4918493654e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:50:00 CST / 1648529400 --> <row><v>3.6815063458e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:51:00 CST / 1648529460 --> <row><v>3.5000000000e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:52:00 CST / 1648529520 --> <row><v>7.2000000000e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:53:00 CST / 1648529580 --> <row><v>3.7782694941e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:54:00 CST / 1648529640 --> <row><v>4.4173050595e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:55:00 CST / 1648529700 --> <row><v>3.5000000000e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:56:00 CST / 1648529760 --> <row><v>7.2000000000e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:57:00 CST / 1648529820 --> <row><v>3.5000000000e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:58:00 CST / 1648529880 --> <row><v>7.2000000000e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 22:59:00 CST / 1648529940 --> <row><v>5.2542812495e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:00:00 CST / 1648530000 --> <row><v>1.9990520838e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:01:00 CST / 1648530060 --> <row><v>3.8554498940e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:02:00 CST / 1648530120 --> <row><v>3.6455010596e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:03:00 CST / 1648530180 --> <row><v>3.7731995750e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:04:00 CST / 1648530240 --> <row><v>4.4680042505e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:05:00 CST / 1648530300 --> <row><v>3.7968779280e+01</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:06:00 CST / 1648530360 --> <row><v>4.2312207195e+00</v><v>0.0000000000e+00</v></row>
+			<!-- 2022-03-28 23:07:00 CST / 1648530420 --> <row><v>3.8625427395e+01</v><v>0.0000000000e+00</v></row>
 		</database>
 	</rra>
 </rrd>
