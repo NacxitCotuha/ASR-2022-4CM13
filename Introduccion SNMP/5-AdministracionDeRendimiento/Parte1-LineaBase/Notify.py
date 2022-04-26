@@ -8,10 +8,10 @@ RRD_PATH = "RRD/"
 IMG_PATH = "IMG/"
 RRD_FILE = "trend.rrd"
 
-MAIL_SENDER = "dummycuenta3@gmail.com"
-MAIL_RECV_IP = "dummycuenta3@gmail.com"
+MAIL_SENDER = "pruebasc121@gmail.com" #"dummycuenta3@gmail.com"
+MAIL_RECV_IP = "pruebasc121@gmail.com" #"dummycuenta3@gmail.com"
 MAIL_SERVER = "smtp.gmail.com:587"
-PASSWORD = "Secreto123"
+PASSWORD = "passwordPerron" #PASSWORD = "Secreto123"
 
 def sendAlertAttached( subject: str ) -> None:
     # Envia un correo electronico adjuntando la imagenn en IMG

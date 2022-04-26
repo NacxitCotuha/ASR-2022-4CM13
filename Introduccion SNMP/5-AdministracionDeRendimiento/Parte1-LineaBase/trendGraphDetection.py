@@ -18,7 +18,7 @@ if __name__ == "__main__":
         "--vertical-label=Cpu load",
         '--lower-limit', '0',
         '--upper-limit', '100',
-        "--title=Uso del CPU del agente Usando SNMP y RRDtools \n Detección de umbrales",
+        "--title=Cagra del CPU del agente Usando SNMP y RRDtools \n Detección de umbrales",
 
         "DEF:cargaCPU=" + RRD_PATH + "trend.rrd:CPUload:AVERAGE",
 
@@ -26,7 +26,9 @@ if __name__ == "__main__":
         "VDEF:cargaMIN=cargaCPU,MINIMUM",
         "VDEF:cargaSTDEV=cargaCPU,STDEV",
         "VDEF:cargaLAST=cargaCPU,LAST",
-
+        
+        # "CDEF:cargaEscalada=cargaCPU,8,*",
+        # Example A, B, C, IF as if (A) then (B) else (C)
         "CDEF:umbral5=cargaCPU,15,LT,0,cargaCPU,IF",
         "AREA:cargaCPU#00FF00:Carga del CPU",
         "AREA:umbral5#FF9F00:Carga CPU mayor que 5",
