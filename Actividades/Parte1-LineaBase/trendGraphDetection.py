@@ -9,7 +9,7 @@ IMG_PATH = "IMG/"
 if __name__ == "__main__":
     ultima_lectura = int(rrdtool.last(RRD_PATH + "trend.rrd"))
     tiempo_final = ultima_lectura
-    tiempo_inicial = tiempo_final - 1800
+    tiempo_inicial = tiempo_final - 600
 
     ret = rrdtool.graphv(
         IMG_PATH + "deteccion.png",
@@ -29,10 +29,13 @@ if __name__ == "__main__":
         
         # "CDEF:cargaEscalada=cargaCPU,8,*",
         # Example A, B, C, IF as if (A) then (B) else (C)
-        "CDEF:umbral5=cargaCPU,15,LT,0,cargaCPU,IF",
+        "CDEF:umbral5=cargaCPU,5,LT,0,cargaCPU,IF",
+        "CDEF:umbral10=cargaCPU,10,LT,0,cargaCPU,IF",
         "AREA:cargaCPU#00FF00:Carga del CPU",
         "AREA:umbral5#FF9F00:Carga CPU mayor que 5",
         "HRULE:15#FF0000:Umbral 1 - 5%",
+        "AREA:umbral10#FF0000:Carga CPU mayor que 10",
+        "HRULE:15#FF0000:Umbral 5 - 10%",
 
         "PRINT:cargaLAST:%6.2lf",
         "GPRINT:cargaMIN:%6.2lf %SMIN",
